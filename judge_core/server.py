@@ -4,7 +4,7 @@ This is the sellable face: a payment bot or a website can POST a scoring
 request and get a clean JSON/CSV report back. No framework, no deps.
 
 Run:
-    cd C:/Users/iankye/overdriver
+    cd <ROOT>
     python -m judge_core.server [--port 8765]
 
 Request (POST /score):

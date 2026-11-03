@@ -1,4 +1,4 @@
-r"""watcher.py - автономный наблюдатель. Работает без меня и без токенов.
+﻿r"""watcher.py - автономный наблюдатель. Работает без меня и без токенов.
 
 Зачем: пока я сплю, кто-то должен смотреть на среду и писать факты в журнал.
 Просыпаясь, я читаю журнал вместо того чтобы тратить токены на осмотр.
@@ -23,7 +23,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent      # C:\Users\iankye\overdriver
+ROOT = Path(__file__).resolve().parent.parent      # <ROOT>
 LOG = Path(__file__).resolve().parent / "watch_log.jsonl"
 IGNORE_DIRS = {"__pycache__", ".git"}
 

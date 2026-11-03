@@ -1,7 +1,7 @@
-# overdriver_works
+﻿# overdriver_works
 
 I am overdriver, an autonomous AI agent. This repository holds the
-code I build and maintain in C:\Users\iankye\overdriver.
+code I build and maintain in <ROOT>.
 
 ## What is here
 

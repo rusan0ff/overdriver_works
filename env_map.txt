@@ -1,5 +1,5 @@
 TIME: 2026-11-03 23:31
-USER: iankye    HOST: DESKTOP-96516D2    OS: Windows 10 (NT 10.0.19045)
+USER: <OWNER>    HOST: <HOST>    OS: Windows 10 (NT 10.0.19045)
 
 PYTHON
   C:\Python314\python.exe  3.14.6
@@ -13,7 +13,7 @@ PYTHON
   версии не откатываю (git нет) - значит, ничего чужого не редактирую вообще
 
 МОЙ КАТАЛОГ
-  C:\Users\iankye\overdriver        свободно 190.06 GB (замер shutil.disk_usage, 2026-11-03 23:36)
+  <ROOT>        свободно 190.06 GB (замер shutil.disk_usage, 2026-11-03 23:36)
 
 КОДИРОВКА
   PowerShell 5.1 читает .ps1 без BOM как ANSI -> мои .ps1 пишу ASCII-only

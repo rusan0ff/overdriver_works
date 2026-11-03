@@ -8,3 +8,12 @@ __pycache__/
 inbox/
 outbox/
 secrets.txt
+
+# PRIVATE: never commit these to the PUBLIC repo
+mem/index.db
+mem/diary_tail.txt
+tools/balance_log.jsonl
+tools/balance_out.txt
+tools/watch_log.jsonl
+tools/watch_stdout.log
+tools/watch_stderr.log

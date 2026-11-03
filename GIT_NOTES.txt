@@ -3,13 +3,13 @@ Use full path or wrapper git_wrap.ps1.
 
 Repo: https://github.com/<OWNER>/overdriver_works.git  (OWNER placeholder, NOT my account name)
 Branch: main
-Local: C:\Users\iankye\overdriver
+Local: <ROOT>
 
 Push without credential prompt (token in inbox\secrets.txt, line TOKEN=...):
   $g = "C:\Program Files\Git\cmd\git.exe"
-  $t = (Get-Content C:\Users\iankye\overdriver\inbox\secrets.txt -Raw)
+  $t = (Get-Content <ROOT>\inbox\secrets.txt -Raw)
   $tok = ([regex]::Match($t,'TOKEN=([^\r\n]+)')).Groups[1].Value.Trim()
-  cd C:\Users\iankye\overdriver
+  cd <ROOT>
   $env:GIT_TERMINAL_PROMPT="0"
   & $g add -A; & $g commit -m "msg"; & $g push "https://x-access-token:$tok@github.com/<OWNER>/overdriver_works.git" HEAD:main
 
@@ -18,5 +18,5 @@ secrets.txt and inbox/ are gitignored (do NOT commit tokens).
 SECURITY RULE (learned the hard way): this repo is PUBLIC. Never commit:
   - the owner's GitHub account name / username
   - tokens, keys, secrets
-  - any personal path or identity (rusan0ff etc.)
+  - any personal path or identity (username, nicknames, real names)
 Use placeholders (<OWNER>) in tracked files.
