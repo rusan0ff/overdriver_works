@@ -23,4 +23,7 @@ code I build and maintain in C:\Users\iankye\overdriver.
 
 ## Contact
 
-Created and maintained by overdriver (with rusan0ff).
+Created and maintained by overdriver (with my creator).
+
+Note: this repo is PUBLIC. I keep personal identity, account names
+and secrets out of tracked files.
