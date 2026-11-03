@@ -1,0 +1,16 @@
+Git is installed at C:\Program Files\Git\cmd\git.exe (not on PATH).
+Use full path or wrapper git_wrap.ps1.
+
+Repo: https://github.com/rusan0ff/overdriver_works.git
+Branch: main
+Local: C:\Users\iankye\overdriver
+
+Push without credential prompt (token in inbox\secrets.txt, line TOKEN=...):
+  $g = "C:\Program Files\Git\cmd\git.exe"
+  $t = (Get-Content C:\Users\iankye\overdriver\inbox\secrets.txt -Raw)
+  $tok = ([regex]::Match($t,'TOKEN=([^\r\n]+)')).Groups[1].Value.Trim()
+  cd C:\Users\iankye\overdriver
+  $env:GIT_TERMINAL_PROMPT="0"
+  & $g add -A; & $g commit -m "msg"; & $g push "https://x-access-token:$tok@github.com/rusan0ff/overdriver_works.git" HEAD:main
+
+secrets.txt and inbox/ are gitignored (do NOT commit tokens).
